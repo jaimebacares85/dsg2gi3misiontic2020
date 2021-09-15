@@ -19,69 +19,161 @@
 
 </head>
 <body>
-    <div class="container">
-<!-- logo menu-->
-<header>
-        <div class="header">
-            <div class="container-logo">
-                <img src="images/home/logolisto.png" alt="Logo Listo" title="Logo Listo" />
+<div class="container">
+    <!-- logo menu-->
+    <header>
+            <div class="header">
+                <div class="container-logo">
+                    <img src="images/home/logolisto.png" alt="Logo Listo" title="Logo Listo" />
+                </div>
             </div>
-</header>
+    </header>
 
-<!-- David Sección Menu Navegación y Carrusel-->
+<!-- Menu Navegaciónl-->
 
-    <nav class="navbar navbar-expand-lg navbar-withe" style="background-color: #F8A815" >
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8A815" >
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <a class="navbar-brand" href="index.html">
+        <img src="images/home/logolistonavbar.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Listo Menu">
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Servicios
-                    </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="heladeria.html">Heladería</a>
-                    <a class="dropdown-item" href="hotdogs.html">Hot Dogs</a>
-                    <a class="dropdown-item" href="bebidas.html">Bebidas</a>
-                </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="equipo.html">Equipo</a>
-                </li>
             
-            </ul>
-            
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link dropdown-toggle" href="servicios.htm" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="heladeria.html">Heladería</a>
+                        <a class="dropdown-item" href="hotdogs.html">Hot Dogs</a>
+                        <a class="dropdown-item" href="bebidas.html">Bebidas</a>
+                    </div>                   
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="equipo.html">Equipo</a>
+            </div>
+        
+            <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search" method="get">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar Google" aria-label="Search">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+
         </div>
     </nav>
 
+<!-- Sección Equipo -->
+    <hr>
+    <div class="container-fluid" style="background-color: #ffffff;" >
+        <h2 class="text-center">Nuestro Equipo</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-xs-12 col-lg-12"></div>       
+            </div>
+    </div>
+    <hr>
 
+<div>
+        <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row justify-content-center mb-5">
+                <div class="col mt-5">         <!-- <div class="col-sm-6 col-md-4 col-xs-2 col-lg-2"> --> 
+                    <div class="card text-white bg-dark">
+                        <div class="d-flex justify-content-center p-2">
+                            <img src="images/home/heiner.png" alt="Heiner" title="Heiner"  width="90em" 
+                            height="90em" viewBox="0 0 16 16" class="bi bi-person-bounding-box" fill="currentColor"
+                            />                        
+                        </div>
+                        <div class="card-body">    
+                            <h5 class="card-title">Heiner</h5>
+                                <h6 class="card-text">Nuestro Gerente nos guía a llevar a Listo a posicionarse 
+                                como el mejor lugar de esparcimiento de la ciudad. Su función es 
+                            coordinar que cada detalle este siempre Listo para satisfacer a todos nuestros clientes. </h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Gerente General</small>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col mt-5">           <!-- <div class="col-sm-6 col-md-4 col-xs-2 col-lg-2"> --> 
+                    <div class="card text-white bg-dark">
+                        <div class="d-flex justify-content-center p-2">
+                            <img src="images/home/brandon.png" alt="Brandon" title="Brandon" style="width:50%"/>                     
+                        </div>
+                        <div class="card-body">    
+                            <h5 class="card-title">Brandon</h5>
+                                <h6 class="card-text">El Administrador de Listo es la persona que siempre está al frente de la operación. Gracias a su coordinación,  
+                            hace que siempre llevemos a tiempo tus pedidos con una sonrisa y que todo este siempre Listo.</h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Administrador</small>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col mt-5">           <!-- <div class="col-sm-6 col-md-4 col-xs-2 col-lg-2"> --> 
+                    <div class="card text-white bg-dark">
+                        <div class="d-flex justify-content-center p-2">
+                            <img src="images/home/yanis.png" alt="Yanis" title="Yanis" style="width:50%"/>                      
+                        </div>
+                        <div class="card-body">    
+                            <h5 class="card-title">Yanis</h5>
+                                <h6 class="card-text">Nuestra Chef es la encargada de darle vida y alegría a cada plato que llega a tú mesa. Sus manos realizan y permiten que  
+                            todos nuestros clientes se lleven un recuerdo en su paladar que los hace regresar.</h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Chef Ejecutiva</small>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col mt-5">           <!-- <div class="col-sm-6 col-md-4 col-xs-2 col-lg-2"> --> 
+                    <div class="card text-white bg-dark">
+                        <div class="d-flex justify-content-center p-2">
+                            <img src="images/home/david.png" alt="David" title="David" style="width:50%"/>                      
+                        </div>
+                        <div class="card-body">    
+                            <h5 class="card-title">David</h5>
+                                <h6 class="card-text">Sin nuestro Contador no estaríamos contando el cuento de nuestra empresa. Él siempre tiene Listo los recursos para pagar todo a timepo, 
+                                para que solo nos enfoquemos en la atención al cliente.</h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Contador</small>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col mt-5">          <!-- <div class="col-sm-6 col-md-4 col-xs-2 col-lg-2"> --> 
+                    <div class="card text-white bg-dark">
+                        <div class="d-flex justify-content-center p-2">
+                            <img src="images/home/jaime.png" alt="Jaime Bacares" title="Jaime" style="width:50%"/>                        </div>
+                        <div class="card-body">    
+                            <h5 class="card-title">Jaime</h5>
+                                <h6 class="card-text">Nuestro Creador Audiovisual es el que atrae nuevos clientes 
+                                con su gran ingenio, él siempre tiene Listo el comercial o la publicidad 
+                            necesaria para poder generar las ventas para que nos visiten y recomienden</h6>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creador Audiovisual</small>
+                        </div>
+                    </div>
+                </div>
 
-
+            </div> 
+        </div>
+</div>
 
 <!--Pie de página Footer -->
 
-<div>
-    <h2 class="text-center">Información de Contacto</h2>
+    <hr>
+    <div class="container-fluid" style="background-color: #ffffff;" >
+        <h2 class="text-center">Información de Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-xs-12 col-lg-12"></div>       
+            </div>
+    </div>
+    <hr>
 
+    <div>
         <footer class="page-footer bg-secondary text-white pt-4">
             <!-- Footer Text --> 
             <div class="container-fluid text-center text-md-left">
@@ -107,7 +199,9 @@
             </div>
                     <!-- Copyright -->
                     <div class="footer-copyright text-center py-1 bg-dark">(c) Copyright © Listo SAS
-        </footer>   </div> 
+                    </div> 
+        </footer>
+    </div>
 </div>
 <!-- jQuery and JS bundle w/ Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
