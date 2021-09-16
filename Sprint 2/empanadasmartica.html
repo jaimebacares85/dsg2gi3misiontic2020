@@ -19,20 +19,21 @@
 
 </head>
 <body>
-<div class="container">
-    <!-- logo menu-->
-    <header>
-            <div class="header">
-                <div class="container-logo">
-                    <img src="images/home/logolisto.png" alt="Logo Listo" title="Logo Listo" />
-                </div>
-            </div>
-    </header>
+<div class="container" style="height: auto; background-color: #DDDADA;">
+
+<!-- logo menu-->
+
+<div class="container" style="height: auto; background-color: #DDDADA;">
+    <div>
+        <header class="container-fluid bg-white" >
+            <a href="index.html"><img src="images/home/logolisto.png" alt="Logo Listo" title="Logo Listo"  class="img-fluid mx-auto d-block" /></a>
+        </header>
+    </div>
 
 <!-- Menu Navegaciónl-->
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8A815" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #F8A815;" >
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         
@@ -40,9 +41,9 @@
         <img src="images/home/logolistonavbar.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Listo Menu">
         </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             
-            <div class="navbar-nav mr-auto">
+            <div class="navbar-nav mr-auto text-center">
                 <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link dropdown-toggle" href="servicios.htm" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,11 +54,18 @@
                 <a class="nav-item nav-link" href="blog.html">Blog</a>
                 <a class="nav-item nav-link" href="equipo.html">Equipo</a>
             </div>
-        
-            <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search" method="get">
+
+            <form class="form-inline my-2 my-lg-0 mr-2" action="https://www.google.com/search" method="get">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar Google" aria-label="Search">
                 <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+
+            <div class="d-flex flex-row justify-content-center">
+                <a href="https://www.facebook.com/" title=""><img src="images/home/facebook.png" alt="Facebook Listo" title="Facebook Listo" width="35" height="35" class=".img-fluid mr-2"/></a>
+                <a href="https://www.instagram.com/" title=""><img src="images/home/instagram.png" alt="Instagram Listo" title="Instagram Listo" width="35" height="35" class=".img-fluid mr-2"/></a>
+                <a href="wa.link/8nifnj" title=""><img src="images/home/whatsapp.png" alt="WhatsApp Listo" title="WhatsApp Listo" width="35" height="35" class=".img-fluid"/></a>
+
+            </div>
 
         </div>
     </nav>
@@ -73,9 +81,9 @@
     <hr>
     <div>
 
-        <div class="container-fluid" style="background-color: #ffffff; width: 1000px;" > 
+        <div class="container-fluid bg-white w-75" > 
 
-            <div class="row justify-content-center" style="height: 430px;">
+            <div class="row justify-content-center" >
                 <div class="col-sm-12 col-xs-12 col-lg-12"> 
 
                     <div class="d-flex justify-content-center align-items-center">
@@ -115,8 +123,6 @@
             </div>
         </div>
 
-
-
 <!--Pie de página Footer -->
 
     <hr>
@@ -129,31 +135,59 @@
     <hr>
 
     <div>
-        <footer class="page-footer bg-secondary text-white pt-4">
+        <footer class="page-footer bg-dark text-white pt-3">
             <!-- Footer Text --> 
-            <div class="container-fluid text-center text-md-left">
+            <div class="container-fluid text-center text-md-left pb-4 px-4">
                 <!-- Grid row --> 
                 <div class="row">
 
                     <!-- Grid column --> 
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content --> 
-                        <h6 class="text-uppercase font-weight-bold">Dirección Cr7 # 127-34</h6>
-                    </div>
+                        
+                            <h4 class="font-weight-bold text-center">Ubicación</h4>
 
+                                    <iframe style="border: 0;" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.276899349669!2d-74.13229468489435!3d4.72189254278736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f835be16dc537%3A0x6fa380bbfe5a096c!2sDg.%2077b%20%23116c%2075%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1625260596544!5m2!1ses-419!2sco" 
+                                    width="500" height="500" allowfullscreen="">
+                                    </iframe>
+                    </div>                   
+                    
                     <!-- Grid column --> 
                     <hr class="clearfix w-100 d-md-none pb-3">
                     <!-- Grid column --> 
     
+
+                    <!-- Grid column --> 
                     <div class="col-md-6 mt-md-0 mt-3">
-                        <!-- Content --> 
-                        <a href="mailto:contacto@listo.com"> contacto@listo.com</a>
-                    </div>
+                        <!-- Content -->
+                        <h4 class="font-weight-bold text-center">Datos de Contacto</h4>
+                        <br>
+                        <h6 class="font-weight-bold text-center">Listo S.A.S.</h6>                        
+                        <h6 class="font-weight-bold text-center">Dirección Dg. 77b #116c 75</h6>
+                        <h6 class="font-weight-bold text-center">Email: <a href="mailto:contacto@listo.com"> contacto@listo.com</a> </h6>
+                        <h6 class="font-weight-bold text-center">Celular: +573163222324</h6>
+                        <br>
+                        <h4 class="font-weight-bold text-center">Mapa del Sitio</h4>
+
+                        <div class="text-center" >
+                            <a class="nav-item nav-link mt-0.5" href="index.html">Inicio</a>
+                            <a class="nav-item nav-link mt-0.5" href="servicios.html">Servicios</a>
+                                <div class="text-center">
+                                    <a class="nav-item nav-link mt-0.5" href="heladeria.html">* Heladería</a>
+                                    <a class="nav-item nav-link mt-0.5" href="hotdogs.html">* Hot Dogs</a>
+                                    <a class="nav-item nav-link mt-0.5" href="bebidas.html">* Bebidas</a>
+                                </div>                   
+                            <a class="nav-item nav-link mt-0.5" href="blog.html">Blog</a>
+                            <a class="nav-item nav-link mt-0.5" href="equipo.html">Equipo</a>
+                        </div>
+
+                    </div>   
 
                 </div>
             </div>
                     <!-- Copyright -->
-                    <div class="footer-copyright text-center py-1 bg-dark">(c) Copyright © Listo SAS
+                    <div class="footer-copyright font-weight-bold text-center py-1 bg-secondary"> Copyright © Listo SAS
                     </div> 
         </footer>
     </div>
