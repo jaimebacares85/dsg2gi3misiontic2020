@@ -1,6 +1,13 @@
 <template>
-<div>
-    <h1>Calculadora Básica</h1>
+<v-container>
+    <v-row>
+        <v-col>
+            <h1 class="text-center">Calculadora Básica</h1>
+        </v-col>
+    </v-row>
+
+    <v-row>
+        <v-col>
     <v-text-field
         type="number"
         label="Number 1"
@@ -8,34 +15,58 @@
         hide-details="auto"
         v-model="n1"
     ></v-text-field>   
-
+        </v-col>
+        <v-col>
     <v-text-field
         type="number"
         label="Number 2"
         :rules="rules"
         hide-details="auto"
         v-model="n2"
-    ></v-text-field>  
-
+    ></v-text-field>
+        </v-col>
+    </v-row>
+    <v-row>
+        <v-col>
     <v-btn
         color="primary"
         elevation="7"
         rounded
         small
-        @click="suma()"
+        @click="sumar()"
     >Sumar</v-btn>
-
+        </v-col>
+        <v-col>
     <v-btn
         color="primary"
         elevation="7"
         rounded
         small
-        @click="resta()"
+        @click="restar()"
     >Restar</v-btn>  
-    
+        </v-col>
+        <v-col>
+    <v-btn
+        color="primary"
+        elevation="7"
+        rounded
+        small
+        @click="multiplicar()"
+    >Multiplicar</v-btn>
+        </v-col>
+    <v-col>
+    <v-btn
+        color="primary"
+        elevation="7"
+        rounded
+        small
+        @click="dividir()"
+    >Dividir</v-btn>
+        </v-col>
+    </v-row>
     <br />
     <span>{{ resultado }}</span>
-</div>
+</v-container>
 </template>
 
 <script>
@@ -54,11 +85,21 @@ export default {
         };
     },
     methods: {
-        suma() {
+        sumar() {
         this.resultado = parseFloat(this.n1) + parseFloat(this.n2);
         },
-        resta() {
+        restar() {
         this.resultado = parseFloat(this.n1) - parseFloat(this.n2);
+        },
+        multiplicar() {
+        this.resultado = parseFloat(this.n1) * parseFloat(this.n2);
+        },
+        dividir() {
+            if (this.n2 == 0){
+                alert("No es un número")   
+            } else {
+                this.resultado = parseFloat(this.n1) / parseFloat(this.n2);
+            }
         },
     }, 
 };
