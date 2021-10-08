@@ -43,3 +43,6 @@ npm install mongoose
 
 ----------------Crear en SRC dos carpetas y dos archivo----------
 crear dos campertas en SRC database y models y en database crear el archivo db.js y en models person.js
+
+-------------Instalar Cors-------------------
+npm install cors

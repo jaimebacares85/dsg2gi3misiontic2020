@@ -89,7 +89,7 @@ class ServerController {
             if (error) {
                 res.status(500).send();
             } else {
-                res.status(200).json(data);
+                res.status(200).json(data); //En vez de data: {"message":"Registro eliminado"}
             }
         })
     }
