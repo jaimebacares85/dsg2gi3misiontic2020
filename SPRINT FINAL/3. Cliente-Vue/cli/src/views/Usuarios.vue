@@ -191,7 +191,7 @@ export default {
         
         editarUsuario(item){
             this.axios.put(`/usuario/${item._id}`, item)
-            .them(res=>{
+            .then(res=>{
                 const index= this.usuarios.findIndex(n=> n._id===res.data._id);
                 this.usuarios[index].nombre=res.data.nombre;
                 this.usuarios[index].correo=res.data.correo;
